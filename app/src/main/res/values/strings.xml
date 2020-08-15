@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Compass</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="latitude_message">Enter latitude in decimal degrees format (e.g. 50.02404). Use negative values to indicate South</string>
+    <string name="longitude_message">Enter longitude in decimal degrees format (e.g. 50.02404). Use negative values to indicate West</string>
+</resources>

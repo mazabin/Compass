@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageCompass"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/ic_compass"
+        android:scaleType="centerCrop"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnLatitude"/>
+
+    <ImageView
+        android:id="@+id/imageArrow"
+        android:layout_height="24dp"
+        android:layout_width="24dp"
+        android:scaleY="5"
+        android:scaleX="1.5"
+        android:src="@drawable/ic_arrow"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageCompass"
+        app:layout_constraintBottom_toTopOf="@+id/btnLatitude"
+        app:layout_constraintVertical_bias="0.27"/>
+
+    <Button
+        android:id="@+id/btnLatitude"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/latitude"
+        android:layout_margin="8dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <Button
+        android:id="@+id/btnLongitude"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/longitude"
+        android:layout_margin="8dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="vertical" />
+</androidx.constraintlayout.widget.ConstraintLayout>
